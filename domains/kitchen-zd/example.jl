@@ -8,9 +8,9 @@ include("render.jl")
 #--- Initial Setup ---#
 
 # Load domain and problem
-path = joinpath(dirname(pathof(Plinf)), "..", "domains", "kitchen")
+path = joinpath(dirname(pathof(Plinf)), "..", "domains", "doors-keys-gems")
 domain = load_domain(joinpath(path, "domain.pddl"))
-problem = load_problem(joinpath(path, "problem-1.pddl"))
+problem = load_problem(joinpath(path, "problem-3.pddl"))
 
 # Initialize state, set goal and goal colors
 state = initstate(domain, problem)
