@@ -3,8 +3,8 @@
 ; sWG
 ; kW.
 ; .D.
-(define (problem doors-keys-gems-1)
-  (:domain doors-keys-gems)
+(define (problem kitchen-1)
+  (:domain kitchen)
   (:objects
     up down right left - direction
     key1 - key gem1 - gem

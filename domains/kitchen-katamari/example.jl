@@ -8,9 +8,9 @@ include("render.jl")
 #--- Initial Setup ---#
 
 # Load domain and problem
-path = joinpath(dirname(pathof(Plinf)), "..", "domains", "doors-keys-gems")
+path = joinpath(dirname(pathof(Plinf)), "..", "domains", "kitchen")
 domain = load_domain(joinpath(path, "domain.pddl"))
-problem = load_problem(joinpath(path, "problem-3.pddl"))
+problem = load_problem(joinpath(path, "problem-1.pddl"))
 
 # Initialize state, set goal and goal colors
 state = initstate(domain, problem)
@@ -72,9 +72,9 @@ replanner = Replanner(planner=planner, persistence=(2, 0.95))
 agent_planner = replanner # planner
 
 # Configure agent model with goal prior and planner
-act_noise = 0.1 # Assume a small amount of action noise
+act_noise = 0.05 # Assume a small amount of action noise
 agent_init = AgentInit(agent_planner, goal_prior)
-agent_config = AgentConfig(domain, agent_planner, act_noise=act_noise)
+agent_config = AgentConfig(domain, agent_planner, act_noise=0.05)
 
 # Define observation noise model
 obs_params = observe_params(

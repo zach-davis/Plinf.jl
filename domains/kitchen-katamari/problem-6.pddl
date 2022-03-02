@@ -79,6 +79,5 @@
          (wall 6 9)
          (wall 8 9)
          (wall 9 9))
-  (:goal (and (has gem3)
-              (has gem1)))
+  (:goal (has gem3))
 )
