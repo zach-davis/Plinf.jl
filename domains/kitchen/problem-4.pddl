@@ -64,5 +64,5 @@
          (wall 8 8)
          (at key2 5 9)
          (itemloc 5 9))
-  (:goal (has gem3))
+  (:goal (has gem1))
 )
