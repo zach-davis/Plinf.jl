@@ -35,7 +35,7 @@
     ;(at stove1 3 8)
     ;(itemloc 3 8)
   )
-  (:goal (has gem1))
+  (:goal (has gem2))
   ;(:goal (and
   ;         (has gem3)
   ;         (cooked gem3)))
